@@ -1,4 +1,12 @@
 sources:
+  
+  conus404-40year-onprem:
+    driver: zarr
+    description: "CONUS404 Hydro Variable subset, 40 years on Caldera on prem storage"
+    args:
+      urlpath: '/caldera/projects/usgs/water/wbeep/conus404_work/zarr_out/conus404_whole.zarr/'
+      consolidated: true  
+  
   conus404-2017-onprem:
     driver: zarr
     description: "CONUS404 Hydro Variable subset, water year 2017 on Caldera on prem storage"
