@@ -27,5 +27,5 @@ sources:
     driver: zarr
     description: "Streamflow extracted from NWM2.1 at USGS Streamgauge locations"
     args:
-      urlpath: '/caldera/projects/usgs/hazards/cmgp/cmgp/woodshole/rsignell/conus404/zarr/nwis_chanobs.zarr'
+      urlpath: '/caldera/projects/usgs/hazards/cmgp/woodshole/rsignell/conus404/zarr/nwis_chanobs.zarr'
       consolidated: true
