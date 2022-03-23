@@ -23,9 +23,25 @@ sources:
       storage_options:
         requester_pays: true
         
-  nwm-nwis-onprem:
+  nwis-streamflow-on-prem:
     driver: zarr
-    description: "Streamflow extracted from NWM2.1 at USGS Streamgauge locations"
+    description: "Streamflow from NWIS, extracted and rechunked into time series (NWM2.1 time period)"
     args:
       urlpath: '/caldera/projects/usgs/hazards/cmgp/woodshole/rsignell/conus404/zarr/nwis_chanobs.zarr'
       consolidated: true
+      
+  nwm21-streamflow-on-prem:
+    driver: zarr
+    description: "Streamflow from NWM2.1, extracted and rechunked into time series"
+    args:
+      urlpath: '/caldera/projects/usgs/hazards/cmgp/woodshole/rsignell/conus404/zarr/chanobs.zarr'
+      consolidated: true
+      
+  nwm21-streamflow:
+    driver: zarr
+    description: "National Water Model 2.1 CHRTOUT on AWS"
+    args:
+      urlpath: 's3://noaa-nwm-retrospective-2-1-zarr-pds/chrtout.zarr' 
+      consolidated: true
+      storage_options:
+        anon: true
