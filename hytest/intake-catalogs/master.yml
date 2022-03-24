@@ -1,0 +1,16 @@
+description: 'Hytest Intake Data Catalog'
+sources:
+
+  caldera:
+    args:
+      path: "{{CATALOG_DIR}}/caldera.ml"
+    description: 'Pangeo Oceanography Dataset Catalog'
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
+
+  cloud:
+    args:
+      path: "{{CATALOG_DIR}}/cloud.yml"
+    description: 'Pangeo Atmospheric Science Dataset Catalog'
+    driver: intake.catalog.local.YAMLFileCatalog
+    metadata: {}
