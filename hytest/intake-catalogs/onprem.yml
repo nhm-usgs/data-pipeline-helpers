@@ -1,0 +1,17 @@
+plugins:
+  source:
+    - module: intake_xarray
+    
+sources:
+      
+  conus404-40year-onprem:
+    description: "CONUS404 Hydro Variables"
+    metadata:
+      url: "https://usgs.gov"
+      tags:
+        - caldera
+        - streamflow
+    driver: arr
+    args:
+      urlpath: '/caldera/projects/usgs/water/wbeep/conus404_work/zarr_out/conus404_whole.zarr/'
+      consolidated: true  
