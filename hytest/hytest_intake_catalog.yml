@@ -63,3 +63,9 @@ sources:
       consolidated: true
       storage_options:
         anon: true
+        
+  nwm21-scores:
+    description: US state information from [CivilServices](https://civil.services/)
+    driver: csv
+    args:
+      urlpath: 'https://raw.githubusercontent.com/nhm-usgs/data-pipeline-helpers/main/hytest/results/nwm_ref_gages_assessment.csv'
