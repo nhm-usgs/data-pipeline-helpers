@@ -1,0 +1,13 @@
+{
+    "catalog": [
+        {
+            "name": "NWM V2.1 Assessment",
+            "type": "csv",
+            "url": "https://raw.githubusercontent.com/nhm-usgs/data-pipeline-helpers/main/hytest/results/nwm_ref_gages_assessment.csv",
+            "tableStyle": {
+                "colorMap": "green-orange",
+				"dataVariable": "pearson_r"
+            }
+        }
+    ]
+}
